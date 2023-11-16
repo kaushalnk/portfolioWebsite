@@ -474,13 +474,9 @@ svg{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: column;
     width: 100vw;
-}
-.proj-body-child {
-  width: 70%;
-  border: 5px solid var(--gama);
- 
+    margin-top: 100px;
 }
 
 .tag-section{
@@ -503,11 +499,76 @@ font-size: 90px;
  color:rgba(17, 14, 14, 0.913);
  font-weight: 900;
 }
-.carousel-caption a{
-  color: white;
-  background-color: var(--gama);
-  text-decoration: none;
-  padding: 5px;
-  border-radius: 5px;
+.proj{
+  display: grid;
+  grid-template-columns:30vw 50vw ;
+  grid-template-rows:1fr;
+  background-color:var(--alpha);
+  border-radius: 0.9vw;
+  box-shadow: 7px 7px 35px black;
+  margin: 50px;
+ 
+  animation: project 1s linear ;
+  animation-fill-mode: forwards;
+  transition: 0.7s;
+}
+:hover.proj{
+  background-color: var(--heading);
+  box-shadow: 10px 10px 20px black;
 }
 
+
+.proj-im{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  
+}
+.proj-im img{
+  width:29vw;
+  height:15vw;
+  border-radius: 0.9vw;
+}
+.proj-dis{
+  margin: auto;
+  color: var(--grey);
+  font-size: 0.9vw;
+  text-align: center;
+}
+.animation-project{
+  animation: projdis 1s linear;
+  opacity: 1;
+
+}
+@keyframes projdis {
+  0%{
+ opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+.proj-dis-h{
+ font-size:1.6vw ;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.butt-vis{
+  background-color:var(--peach);
+  color: var(--grey);
+  border: 0.1vw solid var(--peach);
+  width: 8vw;
+  padding: 0.5vw;
+  border-radius: 0.9vw;
+  font-weight: bolder;
+  margin-top: 0.5vw;
+  box-shadow:2px 2px 5px #323d41;
+  transition: 0.7s;
+  border: 1px solid var(--gama);
+}
+:hover.butt-vis {
+  width: 10vw;
+  background-color: #435456;
+  color:var(--gama);
+}

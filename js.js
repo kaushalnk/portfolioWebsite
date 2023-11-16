@@ -107,3 +107,8 @@ window.addEventListener("scroll", function(){
 
 //nav section code using above is scroll into view function
 
+function nightmode() {
+    
+    document.querySelector("body").style="background-color:red;";
+    
+}
