@@ -3,6 +3,7 @@
     --alpha:#44546A;
     --gama:#1D9A78;
     --bgclr:#090C15;
+    --darkbg:#050b0f;
   }
   @font-face {
 	font-family: 'BAUHS93';
@@ -468,6 +469,7 @@ svg{
 }
 .projects{
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 .proj-body{
   background-color: #090c15; 
@@ -571,4 +573,91 @@ font-size: 90px;
   width: 10vw;
   background-color: #435456;
   color:var(--gama);
+}
+.contactme{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(17, 16, 31, 0.345);
+  color:var(--alpha);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contact-head{
+  margin-top:100px ;
+}
+.contact-head h1{
+  font-size: 48px;
+}
+.contact-head h6{
+  font-size: 15px;
+}
+.c-form{
+  margin: 100px;
+}
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  font-size: 25px;
+  color: var(--gama);
+}
+.form-line{
+  margin: 15px;
+  color: var(--alpha);
+}
+.form-text{
+  display: flex;
+}
+.form-line input{
+  width: 500px;
+  height: 40px;
+  font-size: 15px;
+  background-color: var(--bgclr);
+  outline: none;
+  border: 0px solid var(--gama);
+  border-bottom: 2px solid var(--gama);
+  color: var(--alpha);
+}
+.form-line input:focus ,#txt:focus{
+  box-shadow: 1px 1px 2px var(--gama);
+}
+textarea{
+  width: 400px;
+  height: 100px;
+  font-size: 15px;
+  background-color: var(--bgclr);
+  outline: none;
+  border: 0px solid var(--gama);
+  border-bottom: 2px solid var(--gama);
+  resize: none;
+  
+}
+textarea::-webkit-scrollbar{
+  width: 0px;
+}
+textarea:is(:focus, :valid){
+  border-bottom: 2px solid var(--gama);
+  color: var(--alpha);
+ 
+}
+.form-submit button{
+  background-color: #1D9A78;
+  color: antiquewhite;
+  border: none;
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--alpha);
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px var(--bgclr);
 }
