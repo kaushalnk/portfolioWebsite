@@ -13,6 +13,11 @@
   margin: 0%;
   padding: 0%;
 }
+html{
+  overflow-x: hidden;
+  width: 100vw;
+
+}
 body{
   background-color:var(--bgclr);
   scroll-behavior: smooth;
@@ -79,7 +84,7 @@ margin-top: 2%;
 .home-page{
   width: 100%;
   height: 100vh;
-
+  display: flex;
 }
 .hp-l1{
   
@@ -588,6 +593,10 @@ font-size: 90px;
 .contact-head{
   margin-top:100px ;
 }
+.contact-head a{
+  text-decoration: none;
+  color: aqua;
+}
 .contact-head h1{
   font-size: 48px;
 }
@@ -661,3 +670,47 @@ input:-webkit-autofill:active{
     transition: background-color 5000s ease-in-out 0s;
     box-shadow: inset 0 0 20px 20px var(--bgclr);
 }
+.social-media{
+  width:100vw;
+  height: 200px;
+  /* border-top: 1px solid var(--alpha) ; */
+  background-color: var(--bgclr);
+}
+@media  screen and (min-width:1800px) {
+ .home-page{
+  display:flex;
+ }
+ .hp-l2-c21{
+  height:50%;
+  width: 50%;
+ }
+}
+@media  screen and (max-width:1380px){
+ .nav-anc{
+  width: 108%;
+  font-size: 10px;
+ }
+ .about-cont{
+   height:368px;
+   width: 64%;
+ }
+ .about-h{
+  font-size: 60px;
+ }
+ .sk-head{
+  font-size: 60px;
+ }
+ .tag-sec-line{
+  font-size: 68px;
+ }
+ form{
+  margin-top: 18px;
+ }
+ .contact-head h1{
+  font-size: 42px;
+ }
+ .contact-head h6{
+  font-size: 12px;
+ }
+}
+  
