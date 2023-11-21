@@ -107,8 +107,12 @@ window.addEventListener("scroll", function(){
 
 //nav section code using above is scroll into view function
 
-function nightmode() {
-    
-    document.querySelector("body").style="background-color:red;";
-    
+let navBtn = document.getElementById("menuImg");
+navBtn.addEventListener("click",curtain);
+
+function curtain(){
+  document.getElementById("navManue").classList.toggle("navList");
+  document.getElementById("navManue").classList.toggle("aniul");
+  navBtn.classList.toggle("animRotate");
+ 
 }
