@@ -181,7 +181,7 @@ to{
 }  
 }
 .about-page{
-  height: 100vh;
+ 
 
 }
 .bar-about{
@@ -494,7 +494,7 @@ svg{
 
 .tag-section{
   height: 400px;
-  width: 100vw;
+  width: 98vw;
   background: url(images/pexels-aleksandar-pasaric-618079.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -546,7 +546,7 @@ font-size: 90px;
 .proj-dis{
   margin: auto;
   color: var(--grey);
-  font-size: 0.9vw;
+  font-size: 11px;
   text-align: center;
 }
 .animation-project{
@@ -564,7 +564,7 @@ font-size: 90px;
   
 }
 .proj-dis-h{
- font-size:1.6vw ;
+ font-size:3.6vw ;
  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .butt-vis{
@@ -816,6 +816,7 @@ input:-webkit-autofill:active{
     animation: none;
     width: 100%;
     text-align: center;
+    font-size: 10px;
   }
   .sk-head{
     font-size: 56px;
@@ -824,14 +825,22 @@ input:-webkit-autofill:active{
     display: flex;
     flex-direction: column;
     height: 352px;
+    width: 419px;
+    background-color: var(--heading);
   }
   .proj-im img{
-    width: 88vw;
+    width: 419px;
     height: 23vw;
+  }
+  .proj-dis{
+    background-color: var(--heading);
   }
   .butt-vis{
     font-size: 13px;
-    width: 13vw;
+   
+    width: 100px;
+    background-color: #435456;
+    color:var(--gama);
   }
   .tag-section{
     height: 275px;
@@ -843,4 +852,115 @@ input:-webkit-autofill:active{
     margin-left: 4vw;
   }
 }
-  
+@media  screen and (max-width:625px){
+ 
+ .nav{
+  position: fixed;
+ } .nav-logo{
+  height: 41px;
+  font-size: 26px;
+ }
+ .menue-butt img{
+  width: 40px;
+ }
+  .hp-l1 {
+    margin: auto;
+    margin-top: 84px;
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.hp-l2-c1 {
+  width: 93%;
+  height: 108%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hp-l2-c2{
+  width: 100%;
+  height: 42%;
+}
+.hp-l2-c21{
+  width:44% ;
+  height: 64%;
+}
+#connect{
+  font-size: 12px;
+}
+.HELLO{
+  font-size: 19px;
+}
+.proffesion{
+  font-size: 20px;
+}  
+.name{
+  font-size: 28px;
+}
+.about-cont-c1{
+  animation: none;
+}
+.bar-about{
+  width: 56%;
+  height: 2px;
+  background-color: #1D9A78;
+}
+.about-cont{
+  height: 426px;
+}
+.about-dis{
+  line-height: 16px;
+  word-spacing: 0px;
+}
+.about-dis ul{
+  list-style-type: none;
+}
+.proj-im img{
+  width: 267px;
+    height: 202px;
+}
+.proj{
+  height: 394px;
+    width: 265px;
+}
+.proj-dis-h{
+  font-size: 7.6vw;
+  margin: 50px;
+}
+.proj-dis p{
+  padding: 13px;
+}
+  .nav-logo{
+    width: 31%;
+  }
+  form{
+    font-size: 17px;
+  }
+ .form-line input{
+  width: 427px;
+ }
+ .contact-head h1{
+   font-size: 27px;
+ }
+ .contact-head h6{
+  margin-top: 16px;
+  font-size: 9px;
+ }
+ .c-form{
+  margin: 45px;
+ }
+ .form-line input{
+  width:188px ;
+  height: 27px;
+ }
+ textarea{
+  width: 188px;
+  height: 71px ;
+ }
+ .tag-sec-line{
+  font-size: 19px;
+ }
+ .tag-section{
+  height: 134px;
+ }
+} 
