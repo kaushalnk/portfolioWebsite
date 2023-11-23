@@ -3,6 +3,9 @@ let number2 = document.querySelector('.per-css');
 let number3 = document.querySelector('.per-js');
 let number4 = document.querySelector('.per-rt');
 let number5 = document.querySelector('.per-ph');
+let number6 = document.getElementById("srd-h");
+let number7 = document.getElementById("srd-c");
+let number8 = document.getElementById("srd-j");
 
 let counter1 =0;
 let counter2 =0;
@@ -116,3 +119,18 @@ function curtain(){
   navBtn.classList.toggle("animRotate");
  
 }
+//Skill sec for small range device
+// variable number will start from 6on...
+ 
+  window.addEventListener("scroll", function(){
+    if (isScrollIntoView(number6)){
+      number6.classList.add("filler-h");
+ }}) ;
+  window.addEventListener("scroll", function(){
+    if (isScrollIntoView(number7)){
+      number7.classList.add("filler-c");
+ }}) ;
+  window.addEventListener("scroll", function(){
+    if (isScrollIntoView(number8)){
+      number8.classList.add("filler-j");
+ }}) ;
